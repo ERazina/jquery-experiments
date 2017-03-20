@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<style>
+		.red{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+		}
+
+		.blue{
+			width: 200px;
+			height: 200px;
+			background-color: blue;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+<div class="red"></div>
+<div class="blue"></div>
+
+
+
+<script>
+	$(document).ready(function(){
+		$('.red').click(function(){ 
+			$('.blue').fadeToggle(500); //по клику на элемент другой элемент исчезает или появляется
+			//$('.blue').fadeIn(500); //элемент появляется
+			//$('.red').fadeOut(500); //элемент изчезает
+			//$('.red').fadeTo(500, 0.5); // элемент становится прозрачным наполовину
+		});
+	});
+
+</script>
+	
+</body>
+</html>
