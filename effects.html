@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Эффекты jquery</title>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<style>
+	
+	.square{
+		width: 100px;
+		height: 100px;
+		background-color: #fa5;
+		border: 1px solid red;
+		margin-left:0;
+	}
+
+	.more{
+		background-color: red;
+	}
+	.blue{
+		background-color: blue;
+		border:0;
+	}
+
+	</style>
+</head>
+<body>
+<div class="square"></div>
+
+<script>
+	
+	$('.square').click(function(){
+		$(this).animate(
+			{
+			height:'200px',
+			opacity: 0.4,
+			borderWidth: '10px',
+			backgroundColor: '#fafafa',
+			marginLeft: '10px'
+			}, 2000);
+		$(this).queue(function(){
+			$(this).addClass('more');
+			$(this).dequeue();
+		});
+		$(this).animate({
+				height: '-=100px',
+				width: "+=200px",
+				opacity: 0.2
+			}, 3000);
+		$(this).queue(function(){
+			$(this).addClass('blue').dequeue();
+		});
+		$(this).animate({
+			width: "-=200px",
+			borderRadius: '50%',
+			opacity: 0.8
+		}, 3000);
+		$(this).animate({
+			marginLeft: '400px'
+		}, 3000);
+		$(this).animate({
+			marginLeft: '-200px',
+			opacity: 0
+		}, 4000);
+	});
+
+</script>
+	
+</body>
+</html>
