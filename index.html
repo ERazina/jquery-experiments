@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>QJuery .attr() .addClass(), .val() .each();</title>
+	  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <style>
+    #titleBlock, #contentBlock, #newsBlock{
+      display: block;
+      width: 50px;
+      height: 50px;
+      float: left;
+      padding: 15px;
+      margin: 5px;
+      background-color: #EEEEEE;
+      font-size: 12pt;
+    }
+    .clear{
+    	display: block;
+    	height: 100px;
+    	clear: both;
+    }
+	.string{
+		width: 100%;
+		display: block;
+	}
+    .newsBlock1{
+    	width: 33%;
+    	background-color: orange;
+    	display: inline-block;
+    	text-align: center;
+    }
+
+    .newsBlock2{
+    	width: 33%;
+    	background-color: green;
+    	display: inline-block;
+    	text-align: center;
+    	outline: 1px solid red;
+    }
+
+    .m1{
+    	background-color: green;
+    }
+  </style>
+</head>
+<body>
+	<div class="clear">
+		<div id="titleBlock"> 1 </div>
+	  <div id="contentBlock"> 2 </div>
+	  <div id="newsBlock" class="news"> 3 </div>
+  </div>
+  
+ 	<div class="newsBlock1"> 4 </div>
+ 	<div class="newsBlock1"> 5 </div>
+ 	<div class="newsBlock1"> 6 </div>
+
+	<textarea name="name" id="1" cols="30" rows="10">sdfsdfasdfdasf</textarea>
+
+  <script>
+    var className = $("#newsBlock").attr("class");//вернет существующий класс
+    // alert(className);
+    $("#newsBlock").text('lsdfjkl'); //а так мы заменяем содержимое элемента
+
+    var n = $('#newsBlock').attr('class', 'new1'); //заменили класс news на new1
+    //если нужно изменить не только у первого - использовать each или map
+    //alert(n);
+
+    var m = $('#newsBlock').removeAttr('class'); //удалили класс
+    console.log(m);
+
+    var s = $('#newsBlock').addClass('m1'); //добавили класс
+    console.log(s);
+
+    //проверяем если есть красс - то удаляем
+    var a = $('#newsBlock').hasClass('m1');
+    console.log(a);
+    if( a == true){
+    	$('#newsBlock').removeAttr('class');
+    }
+
+    //получили значение текстового поля
+	var b = $('#1').val();
+	console.log(b);
+
+
+	//поменяли значение текстового поля
+	var b = $('#1').val();
+	console.log(b);
+
+
+
+
+
+
+    //в этом блоке сменили стиль у всех блоков с классом newsBlock1 используя each()
+    $('.newsBlock1').click(function(){
+    	$('.newsBlock1').each(function(){
+    	$(this).attr('class', 'newsBlock2');
+    	});
+
+
+	    $('.newsBlock2').click(function(){
+	    	$('.newsBlock2').each(function(){
+	    	$(this).attr('class', 'newsBlock1');
+	    	});
+	    });
+
+    });
+
+
+
+</script>
+</body>
+</html>
