@@ -22,10 +22,31 @@
 		border:0;
 	}
 
+
+	.foo{
+		width: 100px;
+		height: 100px;
+		background-color: blue;
+		margin-top: 20px;
+	}
+
+
+	#fooa{
+		width: 100px;
+		height: 100px;
+		background-color: blue;
+		margin-top: 20px;
+		margin-left: 400px;
+	}
+
 	</style>
 </head>
 <body>
 <div class="square"></div>
+
+<div class="foo"></div>
+
+<div id="fooa"></div>
 
 <script>
 	
@@ -63,7 +84,10 @@
 			opacity: 0
 		}, 4000);
 	});
+	$('.foo').slideUp().fadeIn();
+	$('.foo').clearQueue(); //очистили очередь - второй эффект поставлен в очередь, а мы ее очищаем, поэтому 2 эффект не выполниться
 
+	$('#fooa').slideUp().fadeIn().dequeue();
 </script>
 	
 </body>

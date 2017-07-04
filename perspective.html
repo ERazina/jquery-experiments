@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Perspective</title>
+
+    <style>
+    .gallery{
+        text-align: center;
+        perspective: 1000px;
+        -webkit-perspective: 1000px;
+    }
+
+    img{
+        width: 20%;
+
+    }
+        .left{
+            transform: rotateY(-20deg);
+            transform-origin: right center; /* Точка поворота справа */
+        }
+        .right{
+            transform: rotateY(20deg);
+            transform-origin: left center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="img/1.jpg" alt="акула" class="left">
+        <img src="img/2.jpg" alt="дельфин">
+        <img src="img/3.jpg" alt="белый медведь" class="right">
+    </div>
+</body>
+</html>
