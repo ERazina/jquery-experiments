@@ -23,10 +23,63 @@
             100% {transform: rotate(360deg);}
         }
 
+        .square{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            margin-top: 20px;
+            animation: translateq 5s linear 1;
+        }
+
+        @keyframes translateq {
+            0% {transform: translate(0);}
+            50% {transform: translate(200px);}
+            100%{transform: translate(0);}
+        }
+
+        .skew{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            margin-top: 20px;
+            animation: skew 4s ease-in 1;
+        }
+
+        @keyframes skew{
+            0%{  transform: skew(0); }
+            50%{ transform: skew(30deg);}
+            100%{  transform: skew(0); }
+        }
+
+        .d3{
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            margin-top: 20px;
+            animation: zoom 4s ease-in 1;
+        }
+
+        .parent{
+            perspective: 1000px;
+            -webkit-perspective: 1000px;
+            -moz-perspective: 1000px;
+        }
+
+        @keyframes zoom{
+            0%   { transform: translate3d(0, 0, 0); }
+            50% { transform: translate3d(0, 0, -200px); }
+            100%   { transform: translate3d(0, 0, 0); }
+        }
+
 
     </style>
 </head>
 <body>
-    <div class="vinil">vinyl</div>
+    <div class="parent">
+        <div class="vinil">vinyl</div>
+        <div class="square"></div>
+        <div class="skew"></div>
+        <div class="d3"></div>
+    </div>
 </body>
 </html>
