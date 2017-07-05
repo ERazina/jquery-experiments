@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3ce1e42-b4dd-4111-b797-e7ce5c49c3f6" name="Default" comment="" />
+    <list default="true" id="f3ce1e42-b4dd-4111-b797-e7ce5c49c3f6" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/checkbox.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -85,11 +88,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="radio.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="radio.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/radio.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
               <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="checkbox.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/checkbox.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -119,6 +132,7 @@
         <option value="$PROJECT_DIR$/datalist.html" />
         <option value="$PROJECT_DIR$/button.html" />
         <option value="$PROJECT_DIR$/radio.html" />
+        <option value="$PROJECT_DIR$/checkbox.html" />
       </list>
     </option>
   </component>
@@ -278,12 +292,12 @@
       <option name="presentableId" value="Default" />
       <updated>1499164729812</updated>
       <workItem from="1499164731177" duration="697000" />
-      <workItem from="1499243398060" duration="3735000" />
+      <workItem from="1499243398060" duration="5237000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10932000" />
+    <option name="totallyTimeSpent" value="12434000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
@@ -419,6 +433,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkbox.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
           <folding />
         </state>
       </provider>
