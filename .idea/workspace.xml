@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3ce1e42-b4dd-4111-b797-e7ce5c49c3f6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datalist.html" afterPath="$PROJECT_DIR$/datalist.html" />
-    </list>
+    <list default="true" id="f3ce1e42-b4dd-4111-b797-e7ce5c49c3f6" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -77,11 +75,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="button.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="button.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/button.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="11" lean-forward="false" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+            <state relative-caret-position="495">
+              <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="radio.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/radio.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -110,6 +118,7 @@
         <option value="$PROJECT_DIR$/iframe.html" />
         <option value="$PROJECT_DIR$/datalist.html" />
         <option value="$PROJECT_DIR$/button.html" />
+        <option value="$PROJECT_DIR$/radio.html" />
       </list>
     </option>
   </component>
@@ -269,12 +278,12 @@
       <option name="presentableId" value="Default" />
       <updated>1499164729812</updated>
       <workItem from="1499164731177" duration="697000" />
-      <workItem from="1499243398060" duration="2578000" />
+      <workItem from="1499243398060" duration="3735000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9775000" />
+    <option name="totallyTimeSpent" value="10932000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
@@ -400,8 +409,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/button.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="11" lean-forward="false" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+        <state relative-caret-position="495">
+          <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/radio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
           <folding />
         </state>
       </provider>
